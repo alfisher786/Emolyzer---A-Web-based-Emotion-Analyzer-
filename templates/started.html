@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="../statics/Sample/main1.css" rel="stylesheet" >
+    <title>Started</title>
+</head>
+<body>
+
+  <div class="tcon">
+
+      <div class="header">
+        {% load static %}
+
+          <nav style="position: fixed; width: 100%; z-index: 20; height:80px;" class="reg">
+<div><a href="/index"><img src="{% static 'images/logo.svg' %}" class="logo"></a></div>
+              <ul>
+
+                  <li><a href="/text">Text</a></li>
+                  <li><a href="/twitter">Twitter</a></li>
+                  <li><a href="/amazon">Amazon</a></li>
+                  <li style="float:right"><a href="/contact">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="chat" style="width: 100%">
+
+            <div class="text">
+              <div class="row">
+                <div class="col-md-6">
+                <h2 >Text Module</h2>
+                <p>Text module allows you to analyze any kind of text like paragraphs,
+                  blog, speech or any article. Once you entered your text we search for keywords which
+                  represents emotions, feelings expressed through it. As a result we share a bar graph analysis
+                   of those feelings with you.</p>
+               </div>
+               <div class="col-md-6">
+                 <div style = "margin-left: 20%; margin-top : 5%;" class="square1"></div>
+                 </div>
+             </div>
+
+            <br><br><br><br><br><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Twitter Module</h2>
+                  <p>Hashtags of any trending topic are useful to any twitter user.
+                    We analyze the fetched tweets based on your input hashtag & number
+                    of tweets on it for finding the feelings in them. In the result addition
+                    to bar graph analysis, we provide a pie chart showing nature of those tweets from positive to negative.</p><br><br>
+                </div>
+                <div class="col-md-6">
+                  <div style = "margin-left: 20%; margin-top : 5%;" class="square2"></div>
+                </div>
+              </div>
+              <br><br><br><br><br><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Amazon Module</h2>
+                  <p>One thing that every online product customer sees before buying anything
+                    are the products reviews by other users. Here in the Amazon module,
+                    a particular user's all reviews given can be fetched to perform analysis,
+                    which will give the overall opinion. You just need to put in the user id
+                    and you get the graphs. Also, cumulative analysis of every review is also
+                    possible simply by just clicking the option.
+
+                  </p><br><br>
+                </div>
+                <div class="col-md-6">
+                  <div style = "margin-left: 20%; margin-top : 5%;" class="square3"></div>
+                </div>
+              </div>
+
+            </div>
+      </div>
+  </div>
+
+
+</body>
+</html>

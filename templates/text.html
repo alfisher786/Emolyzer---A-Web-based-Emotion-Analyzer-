@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="../statics/Sample/main1.css" rel="stylesheet" >
+    <title>Text</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            {% load static %}
+            <nav class="reg">
+                <div><a href="/index"><img src="{% static 'images/logo.svg' %}" class="logo"></a></div>
+                <ul>
+                    <li ><a href="/text">Text</a></li>
+                    <li><a href="/twitter">Twitter</a></li>
+                    <li ><a href="/amazon">Amazon</a></li>
+                    <li style="float:right"><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="chat" style="width: 100%">
+          <form action="/result" method="get">
+
+          <div class="row">
+
+              <br><br>
+              <label style = "margin-left: 30%;"><h3>Enter any Text, Paragraph :</h3></label><br>
+              <textarea style = "margin-left: 30%;" name="queries" id="queries" rows="5" cols="100"></textarea>
+            
+            </div>
+          <br><br>
+          <input style = "margin-left: 65%;" type="submit" class="btn3" value="Search">
+          </form>
+        </div>
+ </div>
+
+  <img src="{% static 'images/photo.svg' %}" class="photo">
+
+</html>

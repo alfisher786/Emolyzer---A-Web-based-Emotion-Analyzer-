@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %} Homepage
+{% endblock title %} 
+
+{% block body %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../statics/Sample/sent2.jpg" class="d-block w-100" alt="..." style="height:700px;">
+    </div>
+    <div class="carousel-item">
+      <img src="../statics/Sample/twitter.png" class="d-block w-100" alt="..." style="height:700px;">
+    </div>
+    <div class="carousel-item">
+      <img src="../statics/Sample/sent1.jpg" class="d-block w-100" alt="..." style="height:700px;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<h1 style="margin-top: 20px; text-align: center;">About NLP</h1>
+<h2 style="margin-top: 50px; margin-left: 50px;">How to Use</h2>
+<p style="font-size: 30px; margin-top: 20px; margin-left: 50px">
+  For analysing a text, go to text analysis tab and enter your text in the box. After entering your text, just press the
+  search button.
+</p>
+<div style="text-align: center;">
+  <img src="../statics/Sample/text portal ss.PNG" alt="Not Found" style="width: 1000px; height: 300px;">
+</div>
+<p style="font-size: 30px; margin-top: 20px; margin-left: 50px">
+  After pressing search, you will be redirected to the result page. There will be a graph of feeling from the text you
+  have entered.
+</p>
+<div style="text-align: center;">
+  <img src="../statics/Sample/text result.PNG" alt="Not Found" style="width: 500px; height: 300px;">
+</div>
+<p style="font-size: 30px; margin-top: 20px; margin-left: 50px">
+  To analyse twitter hashtags or keywords, go to twitter analysis tab. There you will find two search bars, keyword and
+  number of tweets. Enter your hashtag in keyword bar and enter number of tweets that you want to be fetched in next
+  bar. Then, just press search button.
+</p>
+<div style="text-align: center;">
+  <img src="../statics/Sample/Twitter portal ss.PNG" alt="Not Found" style="width: 1000px; height: 300px;">
+</div>
+<p style="font-size: 30px; margin-top: 20px; margin-left: 50px">
+  After pressing search, you will be redirected to the result page. There you will see two graphs. One is for feelings
+  analysis which will show the extent of feelings from fetched tweets and the other one is a pie diagram which will show
+  the extent of positivity and negativity from the tweets. From these two plots, you will be familiar with how people
+  are reacting to a particular hashtag.
+</p>
+<div style="text-align: center;">
+  <img src="../statics/Sample/Twitter result ss.PNG" alt="Not Found" style="width: 1000px; height: 400px;">
+</div>
+<div style="text-align: center;">
+<p style="font-size: 30px; margin-top: 70px; margin-left: 50px">
+  If you have any queries or suggestions, feel free to drop it in contact section.
+</p>
+</div>
+  {% endblock body %}

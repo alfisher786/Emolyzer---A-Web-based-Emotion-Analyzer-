@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Tweet Analysis
+{% endblock title %}
+
+{% block body %}
+<h2 style="text-align:center; margin-top:50px; margin-bottom:50px; color: #04404c;">Tweet Analysis</h2>
+<form action="/result2" method="get">
+  <div class="mb-3" style="width:1200px; margin-left:170px;">
+    <label for="exampleInputEmail1" class="form-label">Twitter keyword/tag</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="tweettext" >
+  </div>
+  <div class="mb-3" style="width:1200px; margin-left:170px;">
+    <label for="exampleInputPassword1" class="form-label">Number of tweets</label>
+    <input type="number" class="form-control" name="tweetnumber" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary" name="tbtn" style="margin-left:170px;">Search</button>
+</form>
+{% endblock body %}

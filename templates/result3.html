@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="../statics/Sample/main1.css" rel="stylesheet" >
+    <title>Amazon Result</title>
+</head>
+<body>
+
+    <div class="tcon">
+
+        <div class="header">
+          {% load static %}
+<nav class="amazoni">
+    <div><a href="/index"><img src="{% static 'images/logolit.svg' %}" class="logo"></a></div>
+
+                <ul>
+
+
+                    <li><a   href="/text">Text</a></li>
+                    <li><a href="/twitter">Twitter</a></li>
+                    <li><a href="/amazon">Amazon</a></li>
+                    <li style="float:right"><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="center">
+            <div style="text-align: center; margin-top: 120px;">
+                <img src="../statics/images/graph.png" alt="Image not found">
+                <h4>User Sentiments</h4>
+                <img src="../statics/images/graph1.png" alt="Image not found">
+                <img src="../statics/images/graph0.png" alt="Image not found">
+            </div>
+
+        </div>
+ </div>
+
+</html>
